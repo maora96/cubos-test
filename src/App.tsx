@@ -1,6 +1,6 @@
-import "./App.css";
 import Multiselect from "./components/Multiselect";
 import { OptionProps } from "./types";
+import styles from "./App.module.css";
 
 function App() {
   const options: OptionProps[] = [
@@ -22,8 +22,8 @@ function App() {
     },
   ];
   return (
-    <div className="App">
-      <div className="appContainer">
+    <div className={styles.App}>
+      <div className={styles.appContainer}>
         <h1>Multiselect</h1>
         <Multiselect options={options} placeholder="Selecione" />
       </div>
