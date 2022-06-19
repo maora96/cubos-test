@@ -15,7 +15,14 @@ export default function Multiselect({
   return (
     <>
       <div className={!isOpen ? styles.multiselect : styles.multiselectActive}>
-        <div className={styles.multiselectContent}>
+        <div
+          className={styles.multiselectContent}
+          onClick={() => {
+            if (!isOpen && selection?.length === 0) {
+              setIsOpen(true);
+            }
+          }}
+        >
           {selection?.length > 0
             ? selection.map((selected) => (
                 <Chip

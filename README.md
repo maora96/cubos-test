@@ -18,7 +18,7 @@ multiselect component for cubos academy's front end jr dev selection process
 # clone repository
 $ git clone https://github.com/maora96/cubos-test.git
 
-# install Dependencies
+# install dependencies
 $ npm install
 
 # run app

@@ -17,6 +17,11 @@
   border: 2px solid #1782ff;
 }
 
+.multiselect svg,
+.multiselectActive svg {
+  cursor: pointer;
+}
+
 .multiselectActive > svg {
   color: #1782ff;
 }
