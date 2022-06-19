@@ -14,7 +14,7 @@ export default function Multiselect({
 
   return (
     <>
-      <div className={styles.multiselect}>
+      <div className={!isOpen ? styles.multiselect : styles.multiselectActive}>
         <div className={styles.multiselectContent}>
           {selection?.length > 0
             ? selection.map((selected) => (

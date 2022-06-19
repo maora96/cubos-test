@@ -1,14 +1,24 @@
-.multiselect {
+.multiselect,
+.multiselectActive {
   width: 25rem;
   height: auto;
+  min-height: 3.7rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   background: #f5f9fc;
-  border-radius: 0.4rem;
-  border: 2px solid #f1f5f7;
+  border-radius: 0.6rem;
+  border: 2px solid #e9f0f4;
   color: #abafbf;
-  padding: 0.4rem 0.8rem 0.4rem 0.4rem;
+  padding: 0.4rem 1.2rem 0.4rem 0.4rem;
+}
+
+.multiselectActive {
+  border: 2px solid #1782ff;
+}
+
+.multiselectActive > svg {
+  color: #1782ff;
 }
 
 .multiselectContent {
@@ -16,4 +26,15 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  font-weight: 500;
+}
+
+.dropdown {
+  width: 25rem;
+  height: auto;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.09);
+  border-radius: 0.6rem;
+  padding: 0.4rem;
 }

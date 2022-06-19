@@ -23,7 +23,10 @@ function App() {
   ];
   return (
     <div className="App">
-      <Multiselect options={options} placeholder="Selecione" />
+      <div className="appContainer">
+        <h1>Multiselect</h1>
+        <Multiselect options={options} placeholder="Selecione" />
+      </div>
     </div>
   );
 }

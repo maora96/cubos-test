@@ -1,2 +1,27 @@
-.chip {
+.option {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #394869;
+  font-weight: 600;
+}
+
+.option:hover {
+  background: #eaf1f7;
+}
+
+.select,
+.selected {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.3rem;
+  border: 2px solid #abafbf;
+}
+
+.selected {
+  background: #1782ff;
+  border: none;
 }

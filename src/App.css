@@ -4,5 +4,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-top: 2rem;
+  font-size: 1.1rem;
+}
+
+.appContainer h1 {
+  color: #394869;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }

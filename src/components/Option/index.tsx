@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { OptionComponentProps } from "../../types";
 import styles from "./styles.module.css";
 
@@ -9,12 +9,29 @@ export default function Option({
   setSelection,
 }: OptionComponentProps) {
   const [isSelected, setIsSelected] = useState<boolean>(false);
+
+  useEffect(() => {
+    console.log(id, isSelected);
+    if (selection?.some((selected) => selected?.id === id)) {
+      console.log(selection?.filter((selected) => selected?.id === id));
+      setIsSelected(true);
+    }
+  }, [selection]);
+
   return (
     <div
       className={styles.option}
       onClick={() => {
-        setSelection([...selection, { id: id, text: text }]);
-        setIsSelected(true);
+        if (isSelected) {
+          const newSelection = selection?.filter(
+            (selected) => selected?.id !== id
+          );
+          setSelection(newSelection);
+          setIsSelected(false);
+        } else {
+          setSelection([...selection, { id: id, text: text }]);
+          setIsSelected(true);
+        }
       }}
     >
       <div className={isSelected ? styles.selected : styles.select}></div>
