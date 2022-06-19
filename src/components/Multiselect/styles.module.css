@@ -1,0 +1,19 @@
+.multiselect {
+  width: 25rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f5f9fc;
+  border-radius: 0.4rem;
+  border: 2px solid #f1f5f7;
+  color: #abafbf;
+  padding: 0.4rem 0.8rem 0.4rem 0.4rem;
+}
+
+.multiselectContent {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
