@@ -11,10 +11,10 @@ export default function Option({
   const [isSelected, setIsSelected] = useState<boolean>(false);
 
   useEffect(() => {
-    console.log(id, isSelected);
     if (selection?.some((selected) => selected?.id === id)) {
-      console.log(selection?.filter((selected) => selected?.id === id));
       setIsSelected(true);
+    } else {
+      setIsSelected(false);
     }
   }, [selection]);
 

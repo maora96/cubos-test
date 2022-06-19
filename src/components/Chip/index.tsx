@@ -17,19 +17,10 @@ export default function Chip({
       <IoCloseSharp
         size={24}
         onClick={() => {
-          if (isSelected) {
-            const newSelection = selection?.filter(
-              (selected) => selected?.id !== id
-            );
-            setSelection(newSelection);
-            setIsSelected(false);
-          }
-          // const filteredSelection = selection?.filter(
-          //   (selected) => selected?.id !== id
-          // );
-          // setSelection([...filteredSelection]);
-          // console.log(`selection`, selection);
-          // console.log(`filtered`, filteredSelection);
+          const filteredSelection = selection?.filter(
+            (selected) => selected?.id !== id
+          );
+          setSelection([...filteredSelection]);
         }}
       />
     </div>
