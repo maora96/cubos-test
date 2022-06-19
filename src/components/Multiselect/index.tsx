@@ -10,7 +10,7 @@ export default function Multiselect({
   placeholder,
 }: MultiselectProps) {
   const [selection, setSelection] = useState<OptionProps[]>([]);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
     <>
