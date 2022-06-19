@@ -2,6 +2,8 @@
 
 multiselect component for cubos academy's front end jr dev selection process
 
+you can check the component [here](https://cubos-test.vercel.app).
+
 ## technologies
 
 - react
@@ -11,6 +13,7 @@ multiselect component for cubos academy's front end jr dev selection process
 
 - vite
 - react-icons
+- storybook
 
 ## start project
 
